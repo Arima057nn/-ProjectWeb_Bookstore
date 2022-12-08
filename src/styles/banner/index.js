@@ -25,6 +25,7 @@ export const BannerContainer = styled(Box)(({ theme }) => ({
   },
   [theme.breakpoints.down("sm")]: {
     height: 300,
+    alignItems: "center",
   },
 }));
 
@@ -59,9 +60,15 @@ export const BannerTitle = styled(Typography)(({ theme }) => ({
   marginBottom: "20px",
   fontFamily: "Merienda One",
 
+  [theme.breakpoints.down("lg")]: {
+    fontSize: "3.8rem",
+  },
   [theme.breakpoints.down("md")]: {
-    fontSize: "3.5rem",
     marginBottom: "12px",
+  },
+
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "3.2rem",
   },
 }));
 

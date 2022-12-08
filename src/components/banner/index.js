@@ -14,7 +14,7 @@ export default function Banner() {
   return (
     <BannerContainer>
       <BannerContent>
-        <BannerTitle variant="h2">Book Stor</BannerTitle>
+        <BannerTitle variant="h2">Book Store</BannerTitle>
         <BannerDescription variant="subtitle">
           Chào mừng anh chi em đến trang web buôn sách lậu của nhà chúng
           em...........
