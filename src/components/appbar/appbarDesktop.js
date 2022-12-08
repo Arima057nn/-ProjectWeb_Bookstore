@@ -76,20 +76,7 @@ export default function AppbarDesktop({ matches }) {
               Book
             </Link>
           </ListItemText>
-          <ListItemText sx={{}}>
-            <Link
-              underline="hover"
-              href="#"
-              sx={{
-                fontSize: "1.2rem",
-                "&:hover": {
-                  color: "#be9c79",
-                },
-              }}
-            >
-              Gallery
-            </Link>
-          </ListItemText>
+
           <ListItemText sx={{}}>
             <Link
               underline="hover"

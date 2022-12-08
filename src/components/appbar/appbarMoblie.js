@@ -26,7 +26,7 @@ export default function AppbarDesktop({ matches }) {
       <IconButton>
         <SearchIcon />
       </IconButton>
-      <Action matches={matches} />
+      {/* <Action matches={matches} /> */}
     </AppbarContainer>
   );
 }
