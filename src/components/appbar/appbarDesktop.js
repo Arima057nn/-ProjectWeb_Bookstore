@@ -37,7 +37,7 @@ export default function AppbarDesktop({ matches }) {
           <ListItemText sx={{}}>
             <Link
               underline="hover"
-              href="#"
+              href="/"
               sx={{
                 fontSize: "1.2rem",
                 "&:hover": {
@@ -65,7 +65,7 @@ export default function AppbarDesktop({ matches }) {
           <ListItemText sx={{}}>
             <Link
               underline="hover"
-              href="#"
+              href="/books"
               sx={{
                 fontSize: "1.2rem",
                 "&:hover": {

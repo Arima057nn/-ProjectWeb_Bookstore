@@ -12,6 +12,7 @@ export const AppbarContainer = styled(Box)(() => ({
   justifyContent: "space-between",
   alignItems: "center",
   padding: "0 8px",
+  borderBottom: "1px solid #be9c79",
 }));
 
 // Header
