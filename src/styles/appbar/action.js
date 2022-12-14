@@ -1,6 +1,7 @@
 import {
   colors,
   Divider,
+  Link,
   ListItemButton,
   ListItemIcon,
   ListItemText,
@@ -9,8 +10,6 @@ import { Colors } from "../../styles/theme";
 import {
   ActionIconsContainerMobile,
   ActionIconsContainerDesktop,
-  AppbarContainer,
-  AppbarHeader,
   MyList,
 } from "../../styles/appbar";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
@@ -29,15 +28,17 @@ export default function Action({ matches }) {
             justifyContent: "center",
           }}
         >
-          <ListItemIcon
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-              color: matches && Colors.secondary,
-            }}
-          >
-            <ShoppingCartIcon />
-          </ListItemIcon>
+          <Link href="/books">
+            <ListItemIcon
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                color: matches && Colors.secondary,
+              }}
+            >
+              <ShoppingCartIcon />
+            </ListItemIcon>
+          </Link>
         </ListItemButton>
 
         <Divider orientation="vertical" flexItem />

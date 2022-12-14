@@ -4,7 +4,7 @@ import { Box, TextField, Button, Container } from "@mui/material";
 import theme from "../styles/theme";
 import { ThemeProvider } from "@mui/material/";
 import Appbar from "../components/appbar";
-import Banner from "../components/banner";
+import Books from "../components/books";
 
 function Home() {
   return (
@@ -12,6 +12,7 @@ function Home() {
       <Container maxWidth="xl">
         <Appbar />
       </Container>
+      <Books mt={2} />
     </ThemeProvider>
   );
 }

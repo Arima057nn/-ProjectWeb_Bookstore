@@ -21,7 +21,7 @@ export default function AppbarDesktop({ matches }) {
   return (
     <AppbarContainer>
       <AppbarHeader>
-        <Link underline="none" href="#">
+        <Link underline="none" href="/">
           Book Store
         </Link>
       </AppbarHeader>
@@ -37,7 +37,7 @@ export default function AppbarDesktop({ matches }) {
           <ListItemText sx={{}}>
             <Link
               underline="hover"
-              href="/"
+              href="/home"
               sx={{
                 fontSize: "1.2rem",
                 "&:hover": {
