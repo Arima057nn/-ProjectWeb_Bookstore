@@ -2,6 +2,9 @@ import { createTheme } from "@mui/material/styles";
 
 export const Colors = {
   primary: "#5f2c3e",
+
+  // secondary: "#be9c79",
+  suki: "#be9c79",
   secondary: "#d1adcc",
   success: "#4CAF50",
   info: "#00a2ff",
@@ -35,6 +38,14 @@ const theme = createTheme({
 
     secondary: {
       main: Colors.secondary,
+    },
+
+    dark: {
+      main: Colors.dark,
+    },
+
+    buyButton: {
+      main: Colors.suki,
     },
   },
 });

@@ -4,8 +4,7 @@ import { Box, TextField, Button, Container, Typography } from "@mui/material";
 import theme from "../styles/theme";
 import { ThemeProvider } from "@mui/material/";
 import Appbar from "../components/appbar";
-import Books from "../components/books";
-import { BannerTitle } from "../styles/banner";
+import BooksFav from "../components/booksFav";
 
 function Home() {
   return (
@@ -25,9 +24,9 @@ function Home() {
           fontFamily: "Merienda One",
         }}
       >
-        Our Books
+        My Favorite Books
       </Typography>
-      <Books mt={2} />
+      <BooksFav mt={2} />
     </ThemeProvider>
   );
 }
