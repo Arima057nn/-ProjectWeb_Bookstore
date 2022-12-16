@@ -2,10 +2,10 @@ import { Grid, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { books } from "../../data";
 import { Container } from "@mui/system";
-import BooksDeskop from "./BooksDeskop";
-import BooksMoblie from "./BooksMoblie";
+import BooksFavDeskop from "./booksFavDesktop";
+import BooksFavMoblie from "./booksFavMoblie";
 
-export default function Books() {
+export default function BooksFav() {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.down("md"));
 
@@ -21,9 +21,9 @@ export default function Books() {
       alignItems="center"
     >
       {matches ? (
-        <BooksMoblie book={book} matches={matches} />
+        <BooksFavMoblie book={book} matches={matches} />
       ) : (
-        <BooksDeskop book={book} matches={matches} />
+        <BooksFavDeskop book={book} matches={matches} />
       )}
     </Grid>
   ));

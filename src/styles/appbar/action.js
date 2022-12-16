@@ -28,7 +28,7 @@ export default function Action({ matches }) {
             justifyContent: "center",
           }}
         >
-          <Link href="/books">
+          <Link href="/cart">
             <ListItemIcon
               sx={{
                 display: "flex",
@@ -63,14 +63,16 @@ export default function Action({ matches }) {
             justifyContent: "center",
           }}
         >
-          <ListItemIcon
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
-            <FavoriteIcon />
-          </ListItemIcon>
+          <Link href="/myFavBooks">
+            <ListItemIcon
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <FavoriteIcon />
+            </ListItemIcon>
+          </Link>
         </ListItemButton>
         <Divider orientation="vertical" flexItem />
       </MyList>

@@ -5,7 +5,7 @@ import { Colors } from "../theme";
 import "@fontsource/montez";
 import "@fontsource/merienda-one/";
 
-export const Book = styled(Box)(({ theme }) => ({
+export const BookFav = styled(Box)(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   alignItems: " center",
@@ -15,7 +15,7 @@ export const Book = styled(Box)(({ theme }) => ({
   },
 }));
 
-export const BookImage = styled("img")(({ src, theme }) => ({
+export const BookFavImage = styled("img")(({ src, theme }) => ({
   src: `url(${src})`,
   width: "250px",
   height: "270px",
@@ -28,16 +28,23 @@ export const BookImage = styled("img")(({ src, theme }) => ({
   },
 }));
 
-export const BookActionButton = styled(IconButton)(() => ({
+export const BookFavActionButton = styled(IconButton)(() => ({
   background: Colors.white,
   margin: 2,
 }));
 
-export const BookFavButton = styled(BookActionButton)(({ isfav, theme }) => ({
-  color: isfav ? Colors.primary : Colors.light,
-}));
+export const BookFavButton = styled(BookFavActionButton)(
+  ({ isfav, theme }) => ({
+    color: isfav ? Colors.primary : Colors.light,
+    // [theme.breakpoints.up("md")]: {
+    //   position: "absolute",
+    //   right: 0,
+    //   top: 0,
+    // },
+  })
+);
 
-export const BookAddToCart = styled(Button, {
+export const BookFavAddToCart = styled(Button, {
   shouldForwardProp: (prop) => prop !== "show",
 })(({ show, theme }) => ({
   width: "120px",
@@ -55,14 +62,14 @@ export const BookAddToCart = styled(Button, {
   opacity: 0.9,
 }));
 
-export const BookMetaWrapper = styled(Box)(({ theme }) => ({
+export const BookFavMetaWrapper = styled(Box)(({ theme }) => ({
   padding: 4,
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
 }));
 
-export const BookActionsWrapper = styled(Box)(({ show, theme }) => ({
+export const BookFavActionsWrapper = styled(Box)(({ show, theme }) => ({
   [theme.breakpoints.up("md")]: {
     // display: show ? "visible" : "none",
     // position: "absolute",
