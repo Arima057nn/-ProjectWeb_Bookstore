@@ -10,6 +10,9 @@ export const BookFav = styled(Box)(({ theme }) => ({
   justifyContent: "center",
   alignItems: " center",
   flexDirection: "column",
+  padding: "12px 0",
+  borderRadius: 12,
+  backgroundColor: Colors.white,
   [theme.breakpoints.down("md")]: {
     position: "relative",
   },
@@ -18,13 +21,14 @@ export const BookFav = styled(Box)(({ theme }) => ({
 export const BookFavImage = styled("img")(({ src, theme }) => ({
   src: `url(${src})`,
   width: "250px",
-  height: "270px",
+  height: "250px",
   background: Colors.light_gray,
-  padding: "10px",
+  // padding: "10px",
   [theme.breakpoints.down("md")]: {
     // width: "80%",
-    width: "200px ",
-    padding: "24px",
+    width: "220px ",
+    height: "220px ",
+    // padding: "24px",
   },
 }));
 

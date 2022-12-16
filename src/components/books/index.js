@@ -2,8 +2,8 @@ import { Grid, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { books } from "../../data";
 import { Container } from "@mui/system";
-import BooksDeskop from "./BooksDeskop";
-import BooksMoblie from "./BooksMoblie";
+import BooksDesktop from "./BooksDesktop";
+import BooksMoblie from "./booksMoblie";
 
 export default function Books() {
   const theme = useTheme();
@@ -23,7 +23,7 @@ export default function Books() {
       {matches ? (
         <BooksMoblie book={book} matches={matches} />
       ) : (
-        <BooksDeskop book={book} matches={matches} />
+        <BooksDesktop book={book} matches={matches} />
       )}
     </Grid>
   ));
