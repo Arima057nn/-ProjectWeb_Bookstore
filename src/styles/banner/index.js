@@ -55,9 +55,9 @@ export const BannerContent = styled(Box)(({ theme }) => ({
 
 export const BannerTitle = styled(Typography)(({ theme }) => ({
   lineHeight: 1.5,
+  marginBottom: "20px",
   fontSize: "4.5rem",
   fontWeight: "bold",
-  marginBottom: "20px",
   fontFamily: "Merienda One",
 
   [theme.breakpoints.down("lg")]: {

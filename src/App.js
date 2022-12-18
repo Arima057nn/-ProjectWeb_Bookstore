@@ -7,6 +7,8 @@ import Books from "./pages/books";
 import BookDetail from "./pages/bookDetail";
 import BooksFav from "./pages/booksFav";
 import Cart from "./pages/cart";
+import Login from "./pages/login";
+import Register from "./pages/register";
 function App() {
   useEffect(() => {
     document.title = "React Material UI - HOME";
@@ -14,6 +16,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/login" exact element={<Login />} />
+        <Route path="/register" exact element={<Register />} />
         <Route path="/" exact element={<Home />} />
         <Route path="/home" exact element={<Home />} />
         <Route path="/books" exact element={<Books />} />

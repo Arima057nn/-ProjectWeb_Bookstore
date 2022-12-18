@@ -47,14 +47,16 @@ export default function Action({ matches }) {
             justifyContent: "center",
           }}
         >
-          <ListItemIcon
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
-            <PersonIcon />
-          </ListItemIcon>
+          <Link href="/login">
+            <ListItemIcon
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <PersonIcon />
+            </ListItemIcon>
+          </Link>
         </ListItemButton>
         <Divider orientation="vertical" flexItem />
 
