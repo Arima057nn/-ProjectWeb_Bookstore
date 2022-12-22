@@ -9,6 +9,7 @@ import BooksFav from "./pages/booksFav";
 import Cart from "./pages/cart";
 import Login from "./pages/login";
 import Register from "./pages/register";
+
 function App() {
   useEffect(() => {
     document.title = "React Material UI - HOME";
@@ -24,6 +25,7 @@ function App() {
         <Route path="/bookDetail" exact element={<BookDetail />} />
         <Route path="/myFavBooks" exact element={<BooksFav />} />
         <Route path="/cart" exact element={<Cart />} />
+        <Route path="/bookDetail" exact element={<BookDetail />} />
       </Routes>
     </BrowserRouter>
   );

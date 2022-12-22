@@ -62,7 +62,7 @@ export const BookFavAddToCart = styled(Button, {
   //   //   show &&
   //   //   `${slideInBottom} 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`,
   // },
-  background: Colors.secondary,
+  background: Colors.suki2,
   opacity: 0.9,
 }));
 

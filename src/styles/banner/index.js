@@ -1,7 +1,7 @@
 import { styled } from "@mui/material/styles";
 import { Box } from "@mui/system";
 import { Colors } from "../theme";
-import { Container, Typography } from "@mui/material";
+import { Container, Typography, Button } from "@mui/material";
 import "@fontsource/montez";
 import { List } from "@mui/material";
 import candles from "../../assets/background6.jpeg";
@@ -15,7 +15,7 @@ export const BannerContainer = styled(Box)(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   flexDirection: "column",
-  height: 700,
+  height: 630,
   width: "100%",
   [theme.breakpoints.down("lg")]: {
     height: 500,
@@ -55,7 +55,7 @@ export const BannerContent = styled(Box)(({ theme }) => ({
 
 export const BannerTitle = styled(Typography)(({ theme }) => ({
   lineHeight: 1.5,
-  marginBottom: "20px",
+  marginBottom: "12px",
   fontSize: "4.5rem",
   fontWeight: "bold",
   fontFamily: "Merienda One",
@@ -75,10 +75,17 @@ export const BannerTitle = styled(Typography)(({ theme }) => ({
 export const BannerDescription = styled(Typography)(({ theme }) => ({
   lineHeight: 1.25,
   letterSpacing: 1.25,
-  marginBottom: "3em",
+  marginBottom: "2em",
   [theme.breakpoints.down("md")]: {
     lineHeight: 1.15,
     letterSpacing: 1.15,
     marginBottom: "1.5em",
   },
+}));
+
+export const BannerButton = styled(Button)(({ theme }) => ({
+  width: 50,
+  background: Colors.suki2,
+  opacity: 0.9,
+  [theme.breakpoints.down("md")]: {},
 }));

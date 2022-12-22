@@ -96,7 +96,7 @@ export default function AppbarDesktop({ matches }) {
           <ListItemButton sx={{ flexGrow: "1" }}>
             <ListItemIcon>
               <SearchIcon />
-              Search ...
+              Searching for ...
             </ListItemIcon>
           </ListItemButton>
         </MyList>

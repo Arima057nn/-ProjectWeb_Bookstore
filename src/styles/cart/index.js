@@ -27,6 +27,7 @@ export const Book = styled(Box)(({ theme }) => ({
   justifyContent: "space-between",
   padding: "16px 8px",
   marginBottom: "12px",
+  borderRadius: 8,
   backgroundColor: Colors.white,
   [theme.breakpoints.down("md")]: {
     flexDirection: "column",
@@ -110,7 +111,8 @@ export const BookAddToCart = styled(Button, {
   shouldForwardProp: (prop) => prop !== "show",
 })(({ show, theme }) => ({
   // fontSize: "12px",
+  // color: Colors.suki2,
   marginTop: 20,
-  background: Colors.suki,
+  background: Colors.suki2,
   opacity: 0.9,
 }));

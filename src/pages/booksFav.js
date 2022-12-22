@@ -12,7 +12,7 @@ function Home() {
       <Container maxWidth="xl">
         <Appbar />
       </Container>
-      <Box sx={{ backgroundColor: "#E7E9EB" }}>
+      <Box sx={{ backgroundColor: "#F6F9FC" }}>
         <Typography
           variant="h2"
           pt={4}
