@@ -12,7 +12,9 @@ function Home() {
       <Container maxWidth="xl">
         <Appbar />
       </Container>
-      <BookDetail mt={2} />
+      <Box sx={{ backgroundColor: "#F6F9FC" }}>
+        <BookDetail mt={2} />
+      </Box>
     </ThemeProvider>
   );
 }

@@ -6,7 +6,7 @@ export default function BookMeta({ book, matches }) {
       <Typography variant={matches ? "h6" : "h5"} lineHeight={2}>
         {book.name}
       </Typography>
-      <Typography variant={matches ? "caption" : "body1"}>
+      <Typography variant={matches ? "inherit" : "body1"}>
         ${book.price}
       </Typography>
     </BookMetaWrapper>
